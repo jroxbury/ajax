@@ -17,7 +17,7 @@
     function myAjax (selector,file){
       selector.on('mouseenter',function(){
         $.ajax({
-          url: file + ".html",
+          url: "template/" + file + ".html",
           type:'GET',
           dataType:"html"
         }).done(function(html){
